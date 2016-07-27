@@ -6,12 +6,12 @@
 
 
 import sys
-from .. import minecraft
-from .. import block
-import server
+from mcpi import minecraft
+from mcpi import block
+# import server
 
 
-mc = minecraft.Minecraft.create(server.address)
+mc = minecraft.Minecraft.create()
 mc.setBlocks(-128,0,-128,128,64,128,0)
 if(len(sys.argv) > 1):
         bid = int(sys.argv[1])
